@@ -7,9 +7,10 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springboot_version}")
+        classpath("io.spring.gradle:dependency-management-plugin:${spring_dependency_management_version}")
     }
 }
-apply plugin: 'spring-boot'
+apply plugin: "org.springframework.boot"
 // configure spring boot with gradle: end
 
 // generate the main application jar in the "application" folder, to make it easier to find
