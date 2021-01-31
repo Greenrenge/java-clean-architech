@@ -15,18 +15,18 @@ apply plugin: "org.springframework.boot"
 
 // generate the main application jar in the "application" folder, to make it easier to find
 jar {
-    archiveName = "clean-architecture-example.jar"
-    destinationDir = project(":application").getBuildDir()
+    archiveFileName = "clean-architecture-example.jar"
+    destinationDirectory = project(":application").getBuildDir()
 }
 
 dependencies {
-    compile project(":application:core")
-    compile project(":application:dataproviders")
-    compile project(":application:entrypoints")
+    implementation project(":application:core")
+    implementation project(":application:dataproviders")
+    implementation project(":application:entrypoints")
 
-    compile libs.spring_boot
-    compile libs.database_initialisation
-    compile libs.log
+    implementation libs.spring_boot
+    implementation libs.database_initialisation
+    implementation libs.log
 
-    testCompile libs.unit_tests
+    testImplementation libs.unit_tests
 }
