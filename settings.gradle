@@ -6,6 +6,6 @@ include "application:dataproviders"
 include "application:entrypoints"
 include "application:configuration"
 
-// // testing
+// testing
 // include "acceptance-tests"
 // include "integration-tests"
