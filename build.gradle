@@ -1,4 +1,14 @@
+plugins {
+    id "io.freefair.lombok" version "5.3.0" apply false
+}
+
 description = "Clean Architecture Example"
+
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'io.freefair.lombok'
+    sourceCompatibility = JavaVersion.VERSION_15
+}
 
 subprojects {
 
@@ -70,11 +80,11 @@ subprojects {
 }
 
 // apply java plugin to all modules
-configure(allprojects - project(":application")) {
-    apply plugin: "java"
-    //sourceCompatibility = JavaVersion.VERSION_1_8
-    sourceCompatibility = JavaVersion.VERSION_14
-}
+// configure(allprojects - project(":application")) {
+//     apply plugin: "java"
+//     //sourceCompatibility = JavaVersion.VERSION_1_8
+//     sourceCompatibility = JavaVersion.VERSION_14
+// }
 
 // task wrapper(type: Wrapper) {
 //     gradleVersion = "6.0"
