@@ -2,7 +2,7 @@ package com.clean.example.core.usecase.broadbandaccessdevice.reconcile;
 
 import com.clean.example.core.usecase.job.OnFailure;
 import com.clean.example.core.usecase.job.OnSuccess;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 

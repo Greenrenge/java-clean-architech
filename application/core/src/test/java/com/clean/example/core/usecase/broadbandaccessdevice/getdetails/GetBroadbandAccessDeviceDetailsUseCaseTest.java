@@ -1,7 +1,7 @@
 package com.clean.example.core.usecase.broadbandaccessdevice.getdetails;
 
 import com.clean.example.core.entity.BroadbandAccessDevice;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static com.clean.example.core.entity.DeviceType.ADSL;
 import static org.assertj.core.api.Assertions.assertThat;

@@ -3,8 +3,8 @@ package com.clean.example.core.usecase.exchange.getcapacity;
 import com.clean.example.core.entity.BroadbandAccessDevice;
 import com.clean.example.core.entity.Capacity;
 import com.clean.example.core.entity.DeviceType;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static com.clean.example.core.entity.DeviceType.ADSL;
 import static com.clean.example.core.entity.DeviceType.FIBRE;
@@ -24,7 +24,7 @@ public class GetCapacityForExchangeUseCaseTest {
 
     GetCapacityForExchangeUseCase getCapacityForExchangeUseCase = new GetCapacityForExchangeUseCase(doesExchangeExist, getAvailablePortsOfAllDevicesInExchange);
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         givenExchangeExists();
     }
