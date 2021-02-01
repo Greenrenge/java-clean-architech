@@ -2,7 +2,7 @@ package com.clean.example.dataproviders.database.broadbandaccessdevice;
 
 import com.clean.example.core.entity.BroadbandAccessDevice;
 import com.clean.example.core.entity.DeviceType;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.dao.IncorrectResultSizeDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 

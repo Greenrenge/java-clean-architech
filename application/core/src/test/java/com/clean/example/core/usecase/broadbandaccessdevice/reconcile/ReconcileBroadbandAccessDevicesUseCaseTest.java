@@ -19,7 +19,8 @@ public class ReconcileBroadbandAccessDevicesUseCaseTest {
     OnSuccess onSuccess = mock(OnSuccess.class);
     OnFailure onFailure = mock(OnFailure.class);
 
-    ReconcileBroadbandAccessDevicesUseCase reconcileBroadbandAccessDevicesUseCase = new ReconcileBroadbandAccessDevicesUseCase(getAllDevicesHostname, getSerialNumberFromModel, getSerialNumberFromReality, updateSerialNumberInModel);
+    ReconcileBroadbandAccessDevicesUseCase reconcileBroadbandAccessDevicesUseCase = new ReconcileBroadbandAccessDevicesUseCase(
+            getAllDevicesHostname, getSerialNumberFromModel, getSerialNumberFromReality, updateSerialNumberInModel);
 
     @Test
     public void nothingToUpdateWhenModeAndRealityAreTheSame() throws Exception {

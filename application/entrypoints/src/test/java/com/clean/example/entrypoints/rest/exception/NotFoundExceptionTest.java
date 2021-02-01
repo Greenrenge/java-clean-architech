@@ -1,7 +1,7 @@
 package com.clean.example.entrypoints.rest.exception;
 
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
