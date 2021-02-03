@@ -2,7 +2,7 @@ package com.clean.example.core.usecase.broadbandaccessdevice.reconcile;
 
 import com.clean.example.core.usecase.job.OnFailure;
 import com.clean.example.core.usecase.job.OnSuccess;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
@@ -19,7 +19,8 @@ public class ReconcileBroadbandAccessDevicesUseCaseTest {
     OnSuccess onSuccess = mock(OnSuccess.class);
     OnFailure onFailure = mock(OnFailure.class);
 
-    ReconcileBroadbandAccessDevicesUseCase reconcileBroadbandAccessDevicesUseCase = new ReconcileBroadbandAccessDevicesUseCase(getAllDevicesHostname, getSerialNumberFromModel, getSerialNumberFromReality, updateSerialNumberInModel);
+    ReconcileBroadbandAccessDevicesUseCase reconcileBroadbandAccessDevicesUseCase = new ReconcileBroadbandAccessDevicesUseCase(
+            getAllDevicesHostname, getSerialNumberFromModel, getSerialNumberFromReality, updateSerialNumberInModel);
 
     @Test
     public void nothingToUpdateWhenModeAndRealityAreTheSame() throws Exception {

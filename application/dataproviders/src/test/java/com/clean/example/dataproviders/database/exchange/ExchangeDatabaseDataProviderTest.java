@@ -1,6 +1,6 @@
 package com.clean.example.dataproviders.database.exchange;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import static org.assertj.core.api.Assertions.assertThat;

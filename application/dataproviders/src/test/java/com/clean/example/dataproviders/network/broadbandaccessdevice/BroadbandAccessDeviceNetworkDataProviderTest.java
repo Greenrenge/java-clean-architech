@@ -2,7 +2,7 @@ package com.clean.example.dataproviders.network.broadbandaccessdevice;
 
 import com.clean.example.dataproviders.network.deviceclient.DeviceClient;
 import com.clean.example.dataproviders.network.deviceclient.DeviceConnectionTimeoutException;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 import static org.mockito.Mockito.mock;

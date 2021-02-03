@@ -1,7 +1,7 @@
 package com.clean.example.core.usecase.broadbandaccessdevice.getdetails;
 
 import com.clean.example.core.entity.BroadbandAccessDevice;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static com.clean.example.core.entity.DeviceType.ADSL;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -14,7 +14,8 @@ public class GetBroadbandAccessDeviceDetailsUseCaseTest {
 
     GetDeviceDetails getDeviceDetails = mock(GetDeviceDetails.class);
 
-    GetBroadbandAccessDeviceDetailsUseCase getBroadbandAccessDeviceDetailsUseCase = new GetBroadbandAccessDeviceDetailsUseCase(getDeviceDetails);
+    GetBroadbandAccessDeviceDetailsUseCase getBroadbandAccessDeviceDetailsUseCase = new GetBroadbandAccessDeviceDetailsUseCase(
+            getDeviceDetails);
 
     @Test
     public void returnsDeviceDetails() throws Exception {
@@ -29,7 +30,8 @@ public class GetBroadbandAccessDeviceDetailsUseCaseTest {
     public void errorWhenDeviceIsNotFound() throws Exception {
         givenADeviceIsNotFound();
 
-        assertThatExceptionOfType(DeviceNotFoundException.class).isThrownBy(() -> getBroadbandAccessDeviceDetailsUseCase.getDeviceDetails("hostname1"));
+        assertThatExceptionOfType(DeviceNotFoundException.class)
+                .isThrownBy(() -> getBroadbandAccessDeviceDetailsUseCase.getDeviceDetails("hostname1"));
     }
 
     private BroadbandAccessDevice givenADeviceIsFound() {
